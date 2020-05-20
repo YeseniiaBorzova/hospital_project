@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create appointment</title>
+</head>
+<body>
+<style>
+    Body {
+        font-family: Calibri, Helvetica, sans-serif;
+        background-color: #d77b7b;
+    }
+    button {
+        background-color: darkred;
+        width: 10%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        opacity: 0.7;
+    }
+    button:hover{
+        background-color: #f34e4e;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    form {
+        border: 3px solid #f1f1f1;
+    }
+</style>
+<form method="post" action="index.php">
+    <p>
+        <label><b>Patient Username:</b></label>
+    </p>
+        <input type="text" name="patient_username" id="patient_username" required>
+    </p>
+    <p>
+        <label><b>Doctor Name:</b></label>
+    </p>
+        <input type="text" name="doctor_name" id="doctor_name" required>
+    </p>
+    <p>
+        <label><b>Doctor Surname:</b></label>
+    </p>
+        <input type="text" name="doctor_surname" id="doctor_surname" required>
+    </p>
+    <label><b>Date(yyyy-mm-dd):</b></label>
+    </p>
+    <p>
+    <textarea rows="1" cols="30" name="date" id="date"  required></textarea>
+    </p>
+        <label><b>Time:</b></label>
+    </p>
+    <select name="hours">
+        <option value="8">08</option>
+        <option value="9">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+    </select>
+    <select name="minutes">
+        <option value="00">:00</option>
+        <option value="15">:15</option>
+        <option value="30">:30</option>
+        <option value="45">:45</option>
+    </select>
+    </p>
+    <p>
+        <button type="submit" name ="create_appointment" value="Create"><b>Create</b></button>
+    </p>
+</form>
+
+</body>
+</html>

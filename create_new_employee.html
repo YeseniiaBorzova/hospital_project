@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New employee</title>
+</head>
+<body>
+<style>
+    Body {
+        font-family: Calibri, Helvetica, sans-serif;
+        background-color: #de8dd6;
+    }
+    button {
+        background-color: darkmagenta;
+        width: 10%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        opacity: 0.7;
+    }
+    button:hover{
+        background-color: magenta;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    form {
+        position: relative;
+        border: 3px solid #f1f1f1;
+    }
+</style>
+<form method="post" action="index.php">
+    <p>
+    <p>
+        <label for="emp_username"><b>Username:</b></label>
+    </p>
+    <input type="text" name="emp_username" id="emp_username"required>
+    </p>
+    </p>
+    <p>
+        <label for="user-pwd"><b>Password:</b></label>
+    </p>
+    <input type="password" name="user-pwd" id="user-pwd" required>
+    </p>
+    <p>
+        <label for="room_number"><b>Room number:</b></label>
+    </p>
+    <input type="number" name="room_number" id="room_number"required>
+    </p>
+    <p>
+        <label for="salary"><b>Salary:</b></label>
+    </p>
+    <input type="number" name="salary" id="salary"required>
+    <p>
+        <label for="first_name"><b>First Name:</b></label>
+    </p>
+    <input type="text" name="first_name" id="first_name"required>
+    </p>
+    <label for="last_name" ><b>Last Name:</b></label>
+    </p>
+    <input type="text" name="last_name" id="last_name"required>
+    <p>
+    </p>
+    <label for="middle_name"><b>Middle Name:</b></label>
+    </p>
+    <input type="text" name="middle_name" id="middle_name" required>
+    <p>
+    </p>
+    <label><b>Departure:</b></label>
+    <select name="departure" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    </p>
+    <p>
+    </p>
+    <label for="position"><b>Position: 'professor','docent','alternate head physician','head of the department','specialist','intern','security','cleaner','duty','accountant'</b></label>
+    </p>
+    <input type="text" name="position" id="position" required>
+    </p>
+    <label for="specialization" ><b>Specialization: 'therapist','otolaryngologist','ophthalmologist','infection disease specialist','gastroenterologist','dermatologist','gynecologist','urologist','venerologist','non-medic personal'</b></label>
+    </p>
+    <input type="text" name="specialization" id="specialization" required>
+    <p>
+        <button type="submit" name ="create_employee" value="Submit" ><b>Submit</b></button>
+    </p>
+</form>
+</body>
+</html>
